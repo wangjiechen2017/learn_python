@@ -1,0 +1,9 @@
+my_food = ['rice','noodles']
+frends_food = my_food
+print (frends_food) 
+
+tuple=(1,2,4)
+tuple=(1,2,3,4)
+print(tuple)
+tuple[0]=5
+print(tuple)
