@@ -16,7 +16,7 @@ def run_game():
         (ai_settings.screen_width,ai_settings.screen_height))
     pygame.display.set_caption("Alian_Invasion")
     #创建一艘飞船
-    ship = Ship(screen)
+    ship = Ship(ai_settings, screen)
     
     
     #开始游戏的主循环
@@ -27,8 +27,8 @@ def run_game():
             #~ if event.type == pygame.QUIT:
                 #~ sys.exit()
         
-        gf.check_events()
-                
+        gf.check_events(ship)
+        ship.update()        
         #~ #每次循环时重绘屏幕
         #~ screen.fill(ai_settings.bg_color)
         #~ ship.blitme()
