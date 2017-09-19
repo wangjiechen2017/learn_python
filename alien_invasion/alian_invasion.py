@@ -36,7 +36,8 @@ def run_game():
         #~ ship.blitme()
         #~ #让最近绘制的屏幕可见
         #~ pygame.display.flip()
-        bullets.update()
+        gf.update_bullets(bullets)
+        #print (len(bullets))
         gf.update_screen(ai_settings, screen, ship, bullets)
 
 run_game()
