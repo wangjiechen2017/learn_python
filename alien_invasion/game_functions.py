@@ -111,6 +111,10 @@ def create_alien(ai_settings, screen, aliens, alien_number, row_number):
     alien.rect.y = alien.rect.height + 2 * alien.rect.height * row_number
     aliens.add(alien)
 
+def update_aliens(aliens):
+    """更新外星人群中所有外星人的位置"""
+    aliens.update()
+
 
 
 

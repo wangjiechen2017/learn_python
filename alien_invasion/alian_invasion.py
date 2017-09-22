@@ -45,6 +45,7 @@ def run_game():
         #~ pygame.display.flip()
         gf.update_bullets(bullets)
         #print (len(bullets))
+        gf.update_aliens(aliens)
         gf.update_screen(ai_settings, screen, ship, aliens,  bullets)
 
 run_game()
